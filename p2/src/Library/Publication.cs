@@ -24,6 +24,20 @@ namespace Ucu.Poo.Defense
             this.EndDate = endDate;
         }
 
+        public string AsText()
+        {
+            
+            StringBuilder String = new StringBuilder();
+            foreach(PublicationItem i in items)
+            {
+                String.Append(i.Material.Name);
+                String.Append(i.Price.ToString());
+                String.Append(i.Quantity.ToString());
+                
+            }
+            return String.ToString();
+        }
+
         public void AddItem(PublicationItem item)
         {
             this.items.Add(item);
