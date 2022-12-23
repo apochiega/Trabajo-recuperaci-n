@@ -7,16 +7,12 @@ namespace Ucu.Poo.Defense
         public MaterialType Type { get; set; }
         
 
-        public bool IsDangerous 
-        {
-            get
-            {
-                return this.Type.IsDangerous;
-            }
-
+        public bool IsDangerous {get; set; }
+        
             
-        }
-
+            
+                
+            
 
         public Material(string name, MaterialType type)
         {
